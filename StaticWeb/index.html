@@ -18,39 +18,47 @@
 </head>
 <body>
 
-  <video autoplay muted loop class="bg-video">
-    <source src="Assets/hero.mp4" type="video/mp4">
-  </video>
+  <!-- Background Video -->
+
+  <div class="background">
+    <div class="bg-video-before"></div>
+    <video autoplay muted loop class="bg-video">
+      <source src="Assets/hero.mp4" type="video/mp4">
+    </video>
+  </div>
 
   <!-- Navbar -->
 
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand px-1" href="#">
         <img src="Assets/logo.png" alt="navbar-logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon"></span> -->
         <span class="material-symbols-outlined hamburger" id="hamburger" onclick="toggleNavMenu()">menu</span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-4 py-4 py-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link active py-2 py-md-0 px-md-3" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+            <a class="nav-link dropdown-toggle py-2 py-md-0 px-md-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Grades
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <ul class="dropdown-menu px-3 py-3 my-2" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item rounded py-2" href="#">Grade 6</a></li>
+                <li><a class="dropdown-item rounded py-2" href="#">Grade 7</a></li>
+                <li><a class="dropdown-item rounded py-2" href="#">Grade 8</a></li>
+                <li><a class="dropdown-item rounded py-2" href="#">Grade 9</a></li>
+                <li><a class="dropdown-item rounded py-2" href="#">Grade 10</a></li>
+                <li><a class="dropdown-item rounded py-2" href="#">Grade 11</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-2 py-md-0 px-md-3" href="#">About</a>
           </li>
         </ul>
         <!-- <form class="d-flex">
@@ -61,13 +69,31 @@
     </div>
   </nav>
 
-  <div class="container-fluid text-dark">
-    <h1>Welcome to Chithra Akura '24</h1>
-    <p>This is a sample page with Bootstrap and Google Material Icons.</p>
-    <button class="btn btn-primary">
-      <i class="material-symbols-outlined">thumb_up</i> Like
-    </button>
-  </div>
+  <!-- Header -->
+
+  <header class="header container-fluid my-5 py-5 text-white">
+    <h1 class="title text-center pt-5 px-5 px-md-0 display-3">
+      <b>Welcome to Chithra Akura</b>
+    </h1>
+    <p class="sub-title text-center py-4">A Project by the Royal College Art Circle</p>
+    <div class="cta d-flex justify-content-center py-3">
+      <a href="" class="btn btn-outline-light px-4 py-2">
+        Learning Portal
+        <!-- <i class="material-symbols-outlined">thumb_up</i> Art Syllubus -->
+      </a>
+    </div>
+  </header>
+
+  <!-- About Us Section -->
+
+  <section class="sect-about-us py-5">
+    <div class="container-fluid text-white">
+      <h2 class="text-center py-5">About Us</h2>
+      <p class="text-center px-5 px-md-0">
+        Chithra Akura is a project by the Royal College Art Circle to provide a platform for students to learn and explore the world of art. We provide resources and guidance for students to learn and improve their skills in art.
+      </p>
+    </div>
+  </section>
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

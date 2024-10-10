@@ -106,16 +106,45 @@ body {
 
 /* HEADER */
 
+.title {
+  animation: floatUp 0.8s ease-out;
+}
+
 .header .sub-title {
   font-weight: 400;
   font-size: 18px;
+  animation: floatUp 0.8s ease-out;
+}
+
+.cta {
+  animation: floatUp 0.8s ease-out;
 }
 
 .cta a {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 6px;
+  border-radius: 8px;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 768px) {

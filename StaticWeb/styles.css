@@ -131,6 +131,10 @@ body {
   border-radius: 8px;
 }
 
+.cta .btn:active {
+  box-shadow: none;
+}
+
 @keyframes floatUp {
   from {
     transform: translateY(30px);

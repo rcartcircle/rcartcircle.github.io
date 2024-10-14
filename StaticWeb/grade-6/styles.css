@@ -25,15 +25,6 @@ body {
 
 /* Background Image */
 
-/* .bg-image img {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-} */
-
 .bg-image {
   width: 100%;
   height: 100vh;
@@ -123,7 +114,6 @@ body {
 }
 
 .lesson-btn .btn-image img {
-  position: absolute;
   width: 92px;
   height: auto;
   transform: rotate(1deg);
@@ -138,16 +128,19 @@ body {
   transition: all 0.5s ease-out;
 }
 #pongal {
+  padding: 15px 0;
   img {
-    width: 100px;
+    height: 92px;
+    width: fit-content;
   }
 }
 
 .lesson-btn .btn-texts {
   font-family: 'Noto Sans Sinhala', sans-serif;
+  padding-left: 30px;
+  padding-right: 18px;
 
   .lesson-no {
-    padding-top: 8px;
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: 400;

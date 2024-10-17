@@ -49,6 +49,7 @@ body {
   left: 0;
   width: 100%;
   color: white;
+  z-index: 1;
 }
 
 .navbar-brand img {
@@ -108,37 +109,55 @@ body {
   backdrop-filter: blur(20px);
   border-radius: 12px;
   animation: floatUp 0.9s ease-out;
-  box-shadow: -2px 22px 64px rgba(17, 17, 17, 0.2);
+  /* background: transparent; */
+  box-shadow: -16px 20px 28px rgba(19, 19, 19, 0.1);
   border: solid 1px transparent;
   transition: all 0.4s ease-out;
+  display: flex;
+  align-items: center;
+}
+
+.lesson-btn .btn-image {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  filter: drop-shadow(-20px 28px 28px rgba(19, 19, 19, 0.8));
 }
 
 .lesson-btn .btn-image img {
-  width: 92px;
-  height: auto;
-  transform: rotate(1deg);
-  filter: drop-shadow(-20px 28px 28px rgba(19, 19, 19, 0.6));
   transition: all 0.5s ease-out;
-  z-index: 2;
 }
 
-#vesak {
-  filter: hue-rotate(180deg);
-  transform: rotate(4deg);
-  transition: all 0.5s ease-out;
-}
-#pongal {
-  padding: 15px 0;
-  img {
-    height: 92px;
-    width: fit-content;
+.lesson-btn:hover {
+  transform: translateY(-6px);
+  border: solid 1px var(--background-color);
+  box-shadow: -2px 22px 72px rgba(17, 17, 17, 0.25);
+
+  .btn-image img {
+    transform: rotate(1deg) scale3d(1.15, 1.15, 1.15);
   }
+}
+
+.lesson-btn:focus, .lesson-btn:active {
+  border: solid 1px var(--background-color);
+  box-shadow: -18px 24px 36px rgba(19, 19, 19, 0.2);
+  /* filter: drop-shadow(-20px 28px 24px rgba(19, 19, 19, 0.2)); */
+}
+
+#vesak img {
+  filter: hue-rotate(180deg);
+  width: 62%;
+  height: auto;
+}
+#pongal img {
+  width: 60%;
+  height: auto;
 }
 
 .lesson-btn .btn-texts {
   font-family: 'Noto Sans Sinhala', sans-serif;
-  padding-left: 30px;
-  padding-right: 18px;
 
   .lesson-no {
     margin-bottom: 10px;
@@ -147,23 +166,8 @@ body {
   }
   .lesson-title {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
   }
-}
-
-.lesson-btn:hover {
-  transform: translateY(-6px);
-  border: solid 1px var(--background-color);
-
-  .btn-image img {
-    transform: scale3d(1.15, 1.15, 1.15);
-  }
-}
-
-.lesson-btn:focus {
-  box-shadow: none;
-  border: solid 1px var(--background-color);
-  filter: drop-shadow(-20px 28px 24px rgba(19, 19, 19, 0.6));
 }
 
 @keyframes floatUp {
@@ -177,5 +181,21 @@ body {
   }
 }
 
-/* @media screen and (max-width: 768px) {
-} */
+@media screen and (max-width: 768px) {
+  .lesson-btn .btn-image {
+    justify-content: start;
+  }
+  #pongal img {
+    width: 80%;
+    height: auto;
+  }
+  #vesak img {
+    width: 90%;
+  }
+  .lesson-btn .btn-texts .lesson-no {
+    font-size: 13px;
+  }
+  .lesson-btn .btn-texts .lesson-title {
+    font-size: 14px;
+  }
+}

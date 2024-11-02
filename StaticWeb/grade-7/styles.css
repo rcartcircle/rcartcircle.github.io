@@ -109,6 +109,7 @@ body {
   backdrop-filter: blur(20px);
   border-radius: 12px;
   animation: floatUp 0.9s ease-out;
+  /* background: transparent; */
   box-shadow: -16px 20px 28px rgba(19, 19, 19, 0.1);
   border: solid 1px transparent;
   transition: all 0.4s ease-out;
@@ -145,11 +146,12 @@ body {
   /* filter: drop-shadow(-20px 28px 24px rgba(19, 19, 19, 0.2)); */
 }
 
-#shanthi img {
-  width: 60%;
+#vesak img {
+  filter: hue-rotate(180deg);
+  width: 62%;
   height: auto;
 }
-#mati img {
+#pongal img {
   width: 60%;
   height: auto;
 }
@@ -183,12 +185,12 @@ body {
   .lesson-btn .btn-image {
     justify-content: start;
   }
-  #shanthi img {
+  #pongal img {
     width: 80%;
     height: auto;
   }
-  #mati img {
-    width: 80%;
+  #vesak img {
+    width: 90%;
   }
   .lesson-btn .btn-texts .lesson-no {
     font-size: 13px;

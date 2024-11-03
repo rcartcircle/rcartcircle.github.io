@@ -10,9 +10,9 @@
   --color-darker-grey: #212529;
   --color-light-grey: #dcdddf;
   --color-background: #fcfcfc;
-  --color-primary: #81b036;
-  --color-primary-light: #a6cf63;
-  --color-primary-dark: #48621e;
+  --color-primary: #ba8e5e;
+  --color-primary-light: #d9c0a6;
+  --color-primary-dark: #8f673d;
 
   --_mesh-gradient-blur: 100px;
   --_mesh-gradient-blend-mode: screen;
@@ -170,12 +170,12 @@ body {
 
 @media (max-width: 600px) {
   .lesson-header {
-    background-position: top right;
+    background-position: bottom center;
   }
 }
 
 #lesson-header-1 {
-  background-image: url(header.jpg);
+  background-image: url(header.png);
 }
 
 .lesson-header .grad-overlay {
@@ -285,11 +285,22 @@ body {
 }
 
 .lesson-content .lesson-inline-ul {
-  padding: 0px 0;
+  width: fit-content;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 65px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 60px;
+  padding-right: 125px;
+  border-radius: 8px;
+  color: var(--color-primary-dark);
+  background-color: var(--color-background);
+}
 
-  li {
-    padding: 5px 0;
-  }
+.lesson-content .lesson-inline-ul li {
+  position: relative;
+  padding: 5px 0 5px 0;
 }
 
 @media (max-width: 600px) {
@@ -304,6 +315,20 @@ body {
   }
   .lesson-ul, .lesson-ol {
     font-size: 14px;
+  }
+  .lesson-content .lesson-inline-ul {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 45px;
+    padding-right: 30px;
+    border-radius: 8px;
+  }
+  .lesson-content .lesson-inline-ul li {
+    font-size: 0.9rem;
   }
 }
 
@@ -414,12 +439,24 @@ body {
 }
 
 
+/* MAIN IMAGE */
+
+.main-image {
+  margin: 20px 0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.main-image-link .main-image {
+  height: 500px;
+  width: auto;
+}
+
 
 /* Image Section */
 
 .image-section {
   font-family: 'Noto Sans Sinhala', sans-serif;
-  margin: 10px 0 60px 0;
 }
 
 .figure {
@@ -429,7 +466,7 @@ body {
   transition: all 0.3s ease;
 }
 .figure:hover {
-  filter: drop-shadow(-12px 18px 30px rgb(72, 98, 30, 0.4));
+  filter: drop-shadow(-12px 18px 30px rgb(141, 22, 34, 0.3));
   transform: scale(1.025, 1.025);
 }
 
@@ -446,10 +483,6 @@ body {
   transition: all 0.3s ease;
 }
 
-#img-1 .figure .image {
-  height: 450px;
-}
-
 .figure .caption {
   font-size: 0.875rem;
   font-weight: 400;
@@ -459,17 +492,11 @@ body {
   .figure:hover {
     transform: none;
   }
-  .figure .image {
-    height: 200px;
-  }
-  #img-1 .figure .image {
-    height: 200px;
-  }
   .figure:hover .image {
     height: 250px;
   }
-  #img-1 .figure:hover .image {
-    height: 250px;
+  .figure .image {
+    height: 200px;
   }
   .figure .caption {
     font-size: 13px;

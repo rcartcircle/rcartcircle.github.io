@@ -160,7 +160,7 @@ body {
 .lesson-header {
   display: flex;
   align-items: end;
-  background-position: top center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -175,7 +175,7 @@ body {
 }
 
 #lesson-header-1 {
-  background-image: url(header.png);
+  background-image: url(header.jpg);
 }
 
 .lesson-header .grad-overlay {

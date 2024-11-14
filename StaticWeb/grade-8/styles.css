@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 :root {
   --primary-color: #212529;
@@ -18,27 +19,8 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #ebe2ec;
+  background-image: url(assets/background.png);
 }
-
-
-/* Background Image */
-
-.bg-image {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-image: url(assets/background-02.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
-  opacity: 0.6;
-}
-
 
 
 /* NAVBAR */
@@ -95,105 +77,5 @@ body {
 @media screen and (max-width: 768px) {
   .navbar {
     background-color: #212529;
-  }
-}
-
-/* Select Lesson Section */
-
-.page-title {
-  animation: floatUp 0.8s ease-out;
-}
-
-.lesson-btn {
-  cursor: pointer;
-  backdrop-filter: blur(20px);
-  border-radius: 12px;
-  animation: floatUp 0.9s ease-out;
-  box-shadow: -16px 20px 28px rgba(19, 19, 19, 0.1);
-  border: solid 1px transparent;
-  transition: all 0.4s ease-out;
-  display: flex;
-  align-items: center;
-}
-
-.lesson-btn .btn-image {
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  filter: drop-shadow(-20px 28px 28px rgba(19, 19, 19, 0.8));
-}
-
-.lesson-btn .btn-image img {
-  transition: all 0.5s ease-out;
-}
-
-.lesson-btn:hover {
-  transform: translateY(-6px);
-  border: solid 1px var(--background-color);
-  box-shadow: -2px 22px 72px rgba(17, 17, 17, 0.25);
-
-  .btn-image img {
-    transform: rotate(1deg) scale3d(1.15, 1.15, 1.15);
-  }
-}
-
-.lesson-btn:focus, .lesson-btn:active {
-  border: solid 1px var(--background-color);
-  box-shadow: -18px 24px 36px rgba(19, 19, 19, 0.2);
-  /* filter: drop-shadow(-20px 28px 24px rgba(19, 19, 19, 0.2)); */
-}
-
-#shanthi img {
-  width: 60%;
-  height: auto;
-}
-#mati img {
-  width: 60%;
-  height: auto;
-}
-
-.lesson-btn .btn-texts {
-  font-family: 'Noto Sans Sinhala', sans-serif;
-
-  .lesson-no {
-    margin-bottom: 10px;
-    font-size: 14px;
-    font-weight: 400;
-  }
-  .lesson-title {
-    font-weight: 600;
-    font-size: 18px;
-  }
-}
-
-@keyframes floatUp {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .lesson-btn .btn-image {
-    justify-content: start;
-  }
-  #shanthi img {
-    width: 80%;
-    height: auto;
-  }
-  #mati img {
-    width: 80%;
-  }
-  .lesson-btn .btn-texts .lesson-no {
-    font-size: 13px;
-  }
-  .lesson-btn .btn-texts .lesson-title {
-    font-size: 14px;
   }
 }

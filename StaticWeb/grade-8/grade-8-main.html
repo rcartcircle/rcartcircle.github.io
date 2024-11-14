@@ -14,15 +14,12 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/StaticWeb/elements/grade-styles/background.css">
+  <link rel="stylesheet" href="/StaticWeb/elements/grade-styles/card.css">
+  <link rel="stylesheet" href="/StaticWeb/elements/grade-styles/header.css">
   
 </head>
 <body>
-
-  <!-- Background image -->
-  <div class="bg-image">
-    <!-- <img src="assets/background-01.jpg" alt="background-image"> -->
-  </div>
-
 
   <!-- Navbar -->
 
@@ -66,36 +63,46 @@
     </div>
   </nav>
 
-  <section class="select-lesson-section container-fluid my-5 pt-1">
-    <div class="m-5 pt-4">
-      <h1 class="page-title display-3 text-center text-dark"><b>Select Your Lesson</b></h1>
-    </div>
-    <!-- Lesson Buttons -->
-    <div class="lesson-btn-list row mx-3 gy-4">
-      <a href="01/g8-1.html" class="lesson-btn btn col-12 col-md-5 container">
-        <div class="row text-start py-1 d-flex flex-row align-items-center justify-content-start">
-          <div class="btn-texts col-8 py-4 px-4 px-md-5" id="l1-text">
-            <p class="lesson-no">01 පාඩම</p>
-            <p class="lesson-title m-0">ශාන්ති කර්ම ආශ්‍රිත දෘශ්‍ය කලා අංග</p>
-          </div>
-          <div class="btn-image col-4" id="shanthi">
-            <img src="assets/Shanthi Karma.png" alt="-">
-          </div>
+
+  <header class="select-grade-header mx-3">
+    <h4>Grade 08</h4>
+    <h1>Select Your Lesson</h1>
+  </header>
+
+  <main class="lesson-cards">
+    <div class="container">
+      <div class="row mx-0 mx-md-2 my-4 my-md-5 gy-4 gy-md-5 gx-4 gx-md-5 justify-content-center">
+        <div class="col-12 col-md-6">
+          <a href="../grade-6/01/g6-1.html" class="card">
+            <div class="card-body">
+              <h6 class="card-subtitle">01 පාඩම</h6>
+              <h5 class="card-title">වෙසක් උත්සවය ආශ්‍රිත කලා අංග රස විඳිමු</h5>
+            </div>
+            <div class="card-drop px-0 px-md-3" id="vesak-lantern">
+              <img src="assets/vesak-lantern-icon.png" alt="vesak_lantern" />
+            </div>
+          </a>
         </div>
-      </a>
-      <a href="02/g6-2.html" class="lesson-btn btn col-12 col-md-5 container">
-        <div class="row text-start py-1 d-flex flex-row align-items-center justify-content-start">
-          <div class="btn-texts col-8 py-4 px-4 px-md-5" id="l2-text">
-            <p class="lesson-no">02 පාඩම</p>
-            <p class="lesson-title m-0">ශ්‍රී ලංකාවේ පාරම්පරික මැටි කලා කර්මාන්තය</p>
-          </div>
-          <div class="btn-image col-4" id="mati">
-            <img src="assets/Mati Work.png" alt="-">
-          </div>
+        <div class="col-12 col-md-6">
+          <a href="../grade-6/01/g6-1.html" class="card">
+            <div class="card-body">
+              <h6 class="card-subtitle">01 පාඩම</h6>
+              <h5 class="card-title">වෙසක් උත්සවය ආශ්‍රිත කලා අංග රස විඳිමු</h5>
+            </div>
+            <div class="card-drop px-0 px-md-3" id="vesak-lantern">
+              <img src="assets/vesak-lantern-icon.png" alt="vesak_lantern" />
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
     </div>
-  </section>
+  </main>
+
+
+
+
+
+
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

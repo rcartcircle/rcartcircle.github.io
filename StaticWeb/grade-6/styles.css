@@ -19,17 +19,8 @@
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
-  background-color: #e2e6ec;
-}
-
-
-/* Background Image */
-
-.bg-image {
   background-image: url(assets/background.png);
 }
-
 
 
 /* NAVBAR */

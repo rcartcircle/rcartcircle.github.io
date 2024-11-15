@@ -43,12 +43,14 @@ body {
     font-size: 72px;
     font-weight: 500;
     margin-bottom: 20px;
+    animation: floatUp 1s ease-out;
 }
 
 .hero-subtitle {
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 60px;
+    animation: floatUp 1s ease-out;
 }
 
 .hero-cta {
@@ -57,13 +59,12 @@ body {
   color: #fff;
   background-color: rgba(240, 169, 230, 0.2);
   border: 1px solid rgba(237, 242, 247, 0.6);
-  /* background-color: rgba(207, 174, 241, 0.3);
-  border: 1px solid rgb(249, 248, 255, 0.6); */
   border-radius: 14px;
   font-weight: 500;
   text-transform: uppercase;
   transition: all 0.4s;
   cursor: pointer;
+  animation: floatUp 1.2s ease-out;
 }
 .hero-cta:hover {
   transform: translate(0, -4px);
@@ -82,14 +83,30 @@ body {
     border-radius: 32px;
     border: none;
     cursor: pointer;
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-image: url('assets/card-bg-1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: all 0.4s ease-out;
+}
+
+#learning-portal-card .card {
+    background-image: url('assets/card-bg-learning-portal.png');
+}
+#art-trivia-card .card {
+    background-image: url('assets/card-bg-art-trivia.png');
+}
+#art-papers-bot-card .card {
+    background-image: url('assets/card-bg-art-papers-bot.png');
+}
+#quizzard-card .card {
+    background-image: url('assets/card-bg-quizzard.png');
+}
+#edvision-card .card {
+    background-image: url('assets/card-bg-edvision.png');
 }
 
 .card:hover {
@@ -108,6 +125,30 @@ body {
     font-size: 48px;
     font-weight: 500;
     color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* CARD ARROW */
+
+.card-arrow {
+    padding: 0;
+    margin: 0 32px;
+    font-size: 48px;
+    color: var(--text-color);
+    opacity: 0;
+    transition: all 0.6s ease-out;
+}
+.card:hover .card-arrow {
+    opacity: 1;
+    transition: all 0.6s ease-out;
+    animation: floatLeft 0.6s ease-out;
+}
+.card:not(:hover) .card-arrow {
+    transition: all 0.6s ease-out;
+    transform: translate(-15px);
 }
 
 .card-text {
@@ -115,6 +156,9 @@ body {
     font-weight: 300;
     color: var(--text-color);
 }
+
+
+/* CARD ICON */
 
 .card-icon {
     display: flex;
@@ -126,13 +170,24 @@ body {
     width: 300px;
     height: auto;
     padding: 0;
-    filter: drop-shadow(0 24px 48px rgba(71, 25, 100, 0.5));
+    filter: drop-shadow(0 24px 64px rgba(71, 25, 100, 0.4));
     transition: all 0.4s ease-out;
 }
 
 .card:hover .card-icon img {
     transform: rotate(-1deg) scale3d(1.05, 1.05, 1.05);
 }
+
+@keyframes floatUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
 
 
@@ -254,147 +309,4 @@ body {
         top: 0;
         opacity: 1;
     }
-}
-
-
-/* HEADER */
-
-.jumbo {
-    padding: 180px 80px;
-    position: relative;
-}
-
-.jumbo::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('assets/jumbo-bg-4.jpg');
-    background-size: cover;
-    background-position-x: right;
-    background-position-y: bottom;
-    filter: brightness(70%);
-    z-index: -1;
-}
-
-.jumbo::after {
-    content: '';
-    position: absolute;
-    top: 0;
-}
-
-.jumbo .title {
-    font-size: 96px;
-}
-
-.jumbo .sub-title {
-    font-size: 24px;
-    margin-bottom: 35px;
-}
-
-.jumbo {
-    .title,
-    .sub-title,
-    .cta-btn {
-        position: relative;
-        z-index: 1;
-    }
-}
-
-.jumbo .cta-btn {
-    padding: 12px 0;
-}
-
-@media (max-width: 768px) {
-    .jumbo {
-        padding: 180px 30px;
-    }
-    .jumbo::before {
-        background-position-x: right;
-        background-position-y: center;
-    }
-    .jumbo .title {
-        font-size: 60px;
-    }
-    .jumbo .sub-title {
-        line-height: 1.3;
-    }
-}
-
-
-/* Cards */
-
-.about-text {
-    z-index: 2;
-}
-
-#Card_Trivia {
-    background-image: url('assets/Trivia.png');
-    background-size: cover;
-}
-
-#Card_tele {
-    background-image: url('assets/bot.png');
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: center;
-}
-
-#Card_Edvision {
-    background-image: url('assets/Edvision.png');
-    background-size: cover;
-}
-
-/* .card {
-    border: none;
-    border-radius: 10px;
-} */
-
-.c-details span {
-    font-weight: 300;
-    font-size: 13px
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-    background-image: url("Assets/Icon.jpeg");
-    background-size: cover;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 39px
-}
-
-.badge span {
-    background-color: #fffbec;
-    width: 60px;
-    height: 25px;
-    padding-bottom: 3px;
-    border-radius: 5px;
-    display: flex;
-    color: #fed85d;
-    justify-content: center;
-    align-items: center
-}
-
-.progress {
-    height: 10px;
-    border-radius: 10px
-}
-
-.progress div {
-    background-color: red
-}
-
-.text1 {
-    font-size: 14px;
-    font-weight: 600
-}
-
-.text2 {
-    color: #a5aec0
 }

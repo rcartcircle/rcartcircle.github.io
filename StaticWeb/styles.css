@@ -17,6 +17,7 @@ body {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 
@@ -191,122 +192,122 @@ body {
 
 
 
+/* NAVIGATION */
 
-
-
-
-
-
-
-
-
-
-
-
-/* NAVBAR */
-
-.navbar-light .navbar-nav .nav-link {
-    color: #000;
-}
-
-#preloder {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 999999;
-    background: #ffffff;
+nav {
+    height: 80px;
+    background: rgba(201, 157, 226, 0.9);
+    border-bottom: 1px solid rgba(219, 188, 253, 0.8);
+    box-shadow: 0 4px 64px rgba(21, 1, 32, 0.2);
+    backdrop-filter: blur(8px);
+    padding: 0 25px;
     display: flex;
-    /* Center loader */
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-}
-
-.loader {
-    width: 40px;
-    height: 40px;
-    border-radius: 60px;
-    animation: loader 0.8s linear infinite;
-}
-
-@keyframes loader {
-    0% {
-        transform: rotate(0deg);
-        border: 4px solid #0FBD66;
-        border-left-color: transparent;
-    }
-    50% {
-        transform: rotate(180deg);
-        border: 4px solid #525252;
-        border-left-color: transparent;
-    }
-    100% {
-        transform: rotate(360deg);
-        border: 4px solid #0FBD66;
-        border-left-color: transparent;
-    }
-}
-
-.swiper {
-    height: 80vh;
-    width: 100%;
-}
-
-.swiper-slide {
-    font-size: 18px;
-    color: #fff;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 40px 60px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.parallax-bg {
-    position: absolute;
-    left: 0;
+    position: sticky;
     top: 0;
-    width: 130%;
-    height: 100%;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
+    z-index: 5;
 }
 
-.swiper-slide .title {
-    font-size: 41px;
-    font-weight: 300;
+.logo img {
+    width: 120px;
+    height: auto;
+    cursor: pointer;
 }
 
-.swiper-slide .subtitle {
-    font-size: 21px;
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.swiper-slide .text {
-    font-size: 14px;
-    max-width: 400px;
-    line-height: 1.3;
+.overview {
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar {
-    position: fixed;
-    width: 100%;
-    animation: animatetop 1.4s;
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.1);
+nav li {
+    list-style: none;
+    margin: 0 20px;
 }
 
-@keyframes animatetop {
-    from {
-        top: -100px;
-        opacity: 0;
-    }
-    to {
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #faf5fd;
+    transition: all ease-in-out 300ms;
+}
+
+nav a:hover {
+    color: #edff4c;
+    /* filter: drop-shadow(0 2px 32px rgba(25, 0, 29, 0.5)); */
+}
+
+nav .active {
+    font-weight: 700;
+}
+
+#check,
+.menu {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 750px) {
+    .nav-items {
+        position: fixed;
         top: 0;
-        opacity: 1;
+        right: 0;
+        height: 100vh;
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: rgb(178, 141, 202);
+        padding: 2rem;
+        right: -450px;
+        transition: all ease-in-out 800ms;
+    }
+
+    .overview {
+        flex-direction: column;
+        width: auto;
+        margin: 0;
+    }
+
+    nav li {
+        margin: 1rem 0;
+    }
+
+    nav a {
+        display: inline-block;
+        font-size: 24px;
+    }
+
+    nav a:hover {
+        transition: all ease-in-out 300ms;
+    }
+
+    .menu {
+        display: inline-block;
+        position: fixed;
+        right: 30px;
+        padding: 5px;
+        z-index: 1;
+    }
+
+    .menu span {
+        font-size: 32px;
+        color: #f8efff;
+        transition: all ease-in-out 300ms;
+    }
+
+    .menu:hover span {
+        color: #edff4c;
+    }
+
+    #check:checked ~ .nav-items {
+        width: 100%;
+        right: 0;
     }
 }

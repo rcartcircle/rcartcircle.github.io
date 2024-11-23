@@ -7,6 +7,7 @@
 .lesson-content h3 {
   padding: 20px 0;
   color: var(--color-primary-dark);
+  font-weight: 500;
 }
 
 .lesson-content p b {

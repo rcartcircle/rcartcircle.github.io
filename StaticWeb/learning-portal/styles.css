@@ -31,6 +31,10 @@ body {
 
 /* HEADER */
 
+.select-grade-header {
+  margin-top: 124px;
+}
+
 .select-grade-header h4 {
   font-size: 18px;
   font-weight: 300;

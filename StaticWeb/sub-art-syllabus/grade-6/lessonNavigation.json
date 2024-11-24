@@ -1,0 +1,24 @@
+{
+  "lessonNavigation": {
+    "lesson1": 
+      {
+        "title": "Lesson 1",
+        "previous": "../grade-6-main.html",
+        "next": "../02/g6-2.html"
+      },
+
+    "lesson2": 
+      {
+        "title": "Lesson 2",
+        "previous": "../01/g6-1.html",
+        "next": "../03/g6-3.html"
+      },
+
+    "lesson3": 
+      {
+        "title": "Lesson 3",
+        "previous": "../02/g6-2.html",
+        "next": "../grade-6-main.html"
+      }
+  }
+}

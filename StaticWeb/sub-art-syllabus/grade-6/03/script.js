@@ -7,8 +7,8 @@ fetch('../lessonNavigation.json')
     const nextLink = document.getElementById('next');
 
     // Replace 'lesson[x]' with the current lesson
-    const lessonKey = "lesson2";
-
+    const lessonKey = "lesson3";
+    
     previousLink.href = data.lessonNavigation[lessonKey].previous;
     nextLink.href = data.lessonNavigation[lessonKey].next;
   })

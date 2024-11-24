@@ -14,9 +14,12 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/StaticWeb/elements/navbar/navbar.css">
     
 </head>
 <body>
+
+    <!-- Navbar -->
 
     <nav>
         <input type="checkbox" id="check" />
@@ -24,7 +27,7 @@
             <span class="material-symbols-outlined" id="menu-icon">menu</span>
         </label>
         <div class="logo">
-            <img src="assets/logo.png" alt="chithra-akura-logo" draggable="false">
+            <img src="/StaticWeb/assets/logo.png" alt="chithra-akura-logo" draggable="false">
         </div>
         <div class="nav-items">
             <ul class="overview">
@@ -36,99 +39,6 @@
             </ul>
         </div>
     </nav>
-      
-    <!-- HERO -->
-
-    <main class="hero">
-        <div class="hero-wrap">
-            <h1 class="hero-title">Welcome to Chithra Akura</h1>
-            <p class="hero-subtitle">A project by the Royal College Art Circle</p>
-            <button class="hero-cta" onclick="location.href='learning-portal/select-grade.html'">Explore</button>
-        </div>
-    </main>
-
-    
-    <!-- SUB-PROJECTS -->
-
-    <section class="sub-project mx-5 my-5" id="learning-portal-card">
-        <a href="learning-portal/select-grade.html" class="card mx-4 my-5">
-            <div class="container">
-                <div class="row px-4">
-                    <div class="card-body col-12 col-md-8">
-                        <h2 class="card-title">Learning Portal<span class="material-symbols-outlined card-arrow">east</span></h2>
-                        <p class="card-text">Art Circle hosts an engaging Art Trivia, challenging participants' knowledge of art history, styles, and iconic works through interactive questions and team-based competition.</p>
-                    </div>
-                    <div class="card-icon col-12 col-md-4">
-                        <img src="assets/icon-1.png" alt="icon-1" />
-                    </div>
-                </div>
-            </div>
-        </a>
-    </section>
-
-    <section class="sub-project mx-5 my-5" id="art-trivia-card">
-        <a href="learning-portal/select-grade.html" class="card mx-4 my-5">
-            <div class="container">
-                <div class="row px-4">
-                    <div class="card-body col-12 col-md-8">
-                        <h2 class="card-title">Art Trivia<span class="material-symbols-outlined card-arrow">east</span></h2>
-                        <p class="card-text">Art Circle hosts an engaging Art Trivia, challenging participants' knowledge of art history, styles, and iconic works through interactive questions and team-based competition.</p>
-                    </div>
-                    <div class="card-icon col-12 col-md-4">
-                        <img src="assets/icon-1.png" alt="icon-1" />
-                    </div>
-                </div>
-            </div>
-        </a>
-    </section>
-    
-    <section class="sub-project mx-5 my-5" id="art-papers-bot-card">
-        <a href="learning-portal/select-grade.html" class="card mx-4 my-5">
-            <div class="container">
-                <div class="row px-4">
-                    <div class="card-body col-12 col-md-8">
-                        <h2 class="card-title">Art Papers Bot<span class="material-symbols-outlined card-arrow">east</span></h2>
-                        <p class="card-text">Art Circle hosts an engaging Art Trivia, challenging participants' knowledge of art history, styles, and iconic works through interactive questions and team-based competition.</p>
-                    </div>
-                    <div class="card-icon col-12 col-md-4">
-                        <img src="assets/icon-1.png" alt="icon-1" />
-                    </div>
-                </div>
-            </div>
-        </a>
-    </section>
-
-    <section class="sub-project mx-5 my-5" id="quizzard-card">
-        <a href="learning-portal/select-grade.html" class="card mx-4 my-5">
-            <div class="container">
-                <div class="row px-4">
-                    <div class="card-body col-12 col-md-8">
-                        <h2 class="card-title">Quizzard<span class="material-symbols-outlined card-arrow">east</span></h2>
-                        <p class="card-text">Art Circle hosts an engaging Art Trivia, challenging participants' knowledge of art history, styles, and iconic works through interactive questions and team-based competition.</p>
-                    </div>
-                    <div class="card-icon col-12 col-md-4">
-                        <img src="assets/icon-1.png" alt="icon-1" />
-                    </div>
-                </div>
-            </div>
-        </a>
-    </section>
-
-    <section class="sub-project mx-5 my-5" id="edvision-card">
-        <a href="learning-portal/select-grade.html" class="card mx-4 my-5">
-            <div class="container">
-                <div class="row px-4">
-                    <div class="card-body col-12 col-md-8">
-                        <h2 class="card-title">Edvision<span class="material-symbols-outlined card-arrow">east</span></h2>
-                        <p class="card-text">Art Circle hosts an engaging Art Trivia, challenging participants' knowledge of art history, styles, and iconic works through interactive questions and team-based competition.</p>
-                    </div>
-                    <div class="card-icon col-12 col-md-4">
-                        <img src="assets/icon-1.png" alt="icon-1" />
-                    </div>
-                </div>
-            </div>
-        </a>
-    </section>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -148,6 +58,131 @@
         });
         });
     </script>
+      
+    <!-- HERO -->
+
+    <main class="hero">
+        <div class="hero-wrap">
+            <h1 class="hero-title">Welcome to Chithra Akura</h1>
+            <p class="hero-subtitle">A project by the Royal College Art Circle</p>
+            <button class="hero-cta" onclick="location.href='#learning-portal-card'">Explore</button>
+        </div>
+    </main>
+
+    
+    <!-- SUB-PROJECTS -->
+
+    <section class="sub-project mx-md-5 my-0 py-1" id="art-syllabus-card">
+        <a href="sub-art-syllabus/select-grade.html" class="card mx-4 mx-md-4 my-4">
+            <div class="container">
+                <div class="row px-4">
+                    <div class="card-body col-12 col-md-8">
+                        <h2 class="card-title">Art Syllabus<span class="material-symbols-outlined card-arrow">east</span></h2>
+                        <p class="card-text">Art Circle hosts an engaging Art Trivia, challenging participants' knowledge of art history, styles, and iconic works through interactive questions and team-based competition.</p>
+                    </div>
+                    <div class="card-icon col-12 col-md-4">
+                        <img src="assets/icon-1.png" alt="icon-1" />
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+    
+    <section class="sub-project mx-md-5 my-0 py-1" id="learning-portal-card">
+        <a href="sub-learning-portal/learning-portal.html" class="card mx-4 mx-md-4 my-4">
+            <div class="container">
+                <div class="row px-4">
+                    <div class="card-body col-12 col-md-8">
+                        <h2 class="card-title">Learning Portal<span class="material-symbols-outlined card-arrow">east</span></h2>
+                        <p class="card-text">Art Circle hosts an engaging Art Trivia, challenging participants' knowledge of art history, styles, and iconic works through interactive questions and team-based competition.</p>
+                    </div>
+                    <div class="card-icon col-12 col-md-4">
+                        <img src="assets/icon-1.png" alt="icon-1" />
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <section class="sub-project mx-md-5 my-0 py-1" id="art-trivia-card">
+        <a href="learning-portal/select-grade.html" class="card mx-4 mx-md-4 my-4">
+            <div class="container">
+                <div class="row px-4">
+                    <div class="card-body col-12 col-md-8">
+                        <h2 class="card-title">Art Trivia<span class="material-symbols-outlined card-arrow">east</span></h2>
+                        <p class="card-text">Art Circle hosts an engaging Art Trivia, challenging participants' knowledge of art history, styles, and iconic works through interactive questions and team-based competition.</p>
+                    </div>
+                    <div class="card-icon col-12 col-md-4">
+                        <img src="assets/icon-1.png" alt="icon-1" />
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+    
+    <section class="sub-project mx-md-5 my-0 py-1" id="art-papers-bot-card">
+        <a href="learning-portal/select-grade.html" class="card mx-4 mx-md-4 my-4">
+            <div class="container">
+                <div class="row px-4">
+                    <div class="card-body col-12 col-md-8">
+                        <h2 class="card-title">Art Papers Bot<span class="material-symbols-outlined card-arrow">east</span></h2>
+                        <p class="card-text">Art Circle hosts an engaging Art Trivia, challenging participants' knowledge of art history, styles, and iconic works through interactive questions and team-based competition.</p>
+                    </div>
+                    <div class="card-icon col-12 col-md-4">
+                        <img src="assets/icon-1.png" alt="icon-1" />
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <section class="sub-project mx-md-5 my-0 py-1" id="instruction-book-card">
+        <a href="learning-portal/select-grade.html" class="card mx-4 mx-md-4 my-4">
+            <div class="container">
+                <div class="row px-4">
+                    <div class="card-body col-12 col-md-8">
+                        <h2 class="card-title">O/L Instruction Book<span class="material-symbols-outlined card-arrow">east</span></h2>
+                        <p class="card-text">Art Circle hosts an engaging Art Trivia, challenging participants' knowledge of art history, styles, and iconic works through interactive questions and team-based competition.</p>
+                    </div>
+                    <div class="card-icon col-12 col-md-4">
+                        <img src="assets/icon-1.png" alt="icon-1" />
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <section class="sub-project mx-md-5 my-0 py-1" id="quizzard-card">
+        <a href="learning-portal/select-grade.html" class="card mx-4 mx-md-4 my-4">
+            <div class="container">
+                <div class="row px-4">
+                    <div class="card-body col-12 col-md-8">
+                        <h2 class="card-title">Quizzard<span class="material-symbols-outlined card-arrow">east</span></h2>
+                        <p class="card-text">Art Circle hosts an engaging Art Trivia, challenging participants' knowledge of art history, styles, and iconic works through interactive questions and team-based competition.</p>
+                    </div>
+                    <div class="card-icon col-12 col-md-4">
+                        <img src="assets/icon-1.png" alt="icon-1" />
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <section class="sub-project mx-md-5 my-0 py-1" id="edvision-card">
+        <a href="learning-portal/select-grade.html" class="card mx-4 mx-md-4 my-4">
+            <div class="container">
+                <div class="row px-4">
+                    <div class="card-body col-12 col-md-8">
+                        <h2 class="card-title">Edvision<span class="material-symbols-outlined card-arrow">east</span></h2>
+                        <p class="card-text">Art Circle hosts an engaging Art Trivia, challenging participants' knowledge of art history, styles, and iconic works through interactive questions and team-based competition.</p>
+                    </div>
+                    <div class="card-icon col-12 col-md-4">
+                        <img src="assets/icon-1.png" alt="icon-1" />
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
 
 
     <!-- Bootstrap JS and dependencies -->

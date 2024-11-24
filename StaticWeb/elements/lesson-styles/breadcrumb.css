@@ -1,8 +1,8 @@
 /* LESSON BREADCRUMB */
 
 .breadcrumb {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -25,6 +25,6 @@
   text-decoration: underline;
 }
 
-.breadcrumb-item.active {
+.breadcrumb-item.current {
   color: var(--color-dark-grey);
 }

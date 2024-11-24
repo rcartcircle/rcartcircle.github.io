@@ -24,51 +24,53 @@
   <link rel="stylesheet" href="/StaticWeb/elements/lesson-styles/main-image.css"> 
   <link rel="stylesheet" href="/StaticWeb/elements/lesson-styles/related-links.css"> 
   <link rel="stylesheet" href="/StaticWeb/elements/lesson-styles/scrollbar.css"> 
-  <link rel="stylesheet" href="/StaticWeb/elements/lesson-styles/texts.css"> 
+  <link rel="stylesheet" href="/StaticWeb/elements/lesson-styles/texts.css">
+
+  <link rel="stylesheet" href="/StaticWeb/elements/navbar/navbar.css">
   
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand px-1" href="#">
-        <img src="../../assets/logo.png" alt="navbar-logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="material-symbols-outlined hamburger" id="hamburger" onclick="toggleNavMenu()">menu</span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-4 py-4 py-md-0">
-          <li class="nav-item">
-            <a class="nav-link py-2 py-md-0 px-md-3" aria-current="page" href="../../index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link active dropdown-toggle py-2 py-md-0 px-md-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Grades
-            </a>
-            <ul class="dropdown-menu px-3 py-3 my-2" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item rounded py-2" href="#">Grade 6</a></li>
-                <li><a class="dropdown-item rounded py-2" href="#">Grade 7</a></li>
-                <li><a class="dropdown-item rounded py-2" href="#">Grade 8</a></li>
-                <li><a class="dropdown-item rounded py-2" href="#">Grade 9</a></li>
-                <li><a class="dropdown-item rounded py-2" href="#">Grade 10</a></li>
-                <li><a class="dropdown-item rounded py-2" href="#">Grade 11</a></li>
-              <!-- <li><hr class="dropdown-divider"></li> -->
-              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link py-2 py-md-0 px-md-3" href="#">About</a>
-          </li>
+
+  <nav>
+    <input type="checkbox" id="check" />
+    <label for="check" class="menu">
+        <span class="material-symbols-outlined" id="menu-icon">menu</span>
+    </label>
+    <div class="logo">
+        <img src="/StaticWeb/assets/logo.png" alt="chithra-akura-logo" draggable="false">
+    </div>
+    <div class="nav-items">
+        <ul class="overview">
+            <li><a href="/StaticWeb/index.html">Home</a></li>
+            <li><a href="/StaticWeb/learning-portal/select-grade.html" class="active">Learning Portal</a></li>
+            <li><a href="#">Art Trivia</a></li>
+            <li><a href="#">Quizzard</a></li>
+            <li><a href="#">Papers Bot</a></li>
         </ul>
-        <!-- <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
-      </div>
     </div>
   </nav>
+
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      const checkbox = document.getElementById('check');
+      const menuIcon = document.getElementById('menu-icon');
+
+      checkbox.addEventListener('change', function() {
+          if (checkbox.checked) {
+          menuIcon.textContent = 'close';
+          menuIcon.style.transition = 'transform 0.2s ease-out';
+          menuIcon.style.transform = 'rotate(90deg)';
+          } else {
+          menuIcon.textContent = 'menu';
+          menuIcon.style.transition = 'transform 0.2s ease-out';
+          menuIcon.style.transform = 'rotate(0deg)';
+          }
+      });
+      });
+  </script>
+
 
   <div class="back-arrow btn btn-outline">
     <span class="material-symbols-outlined">
@@ -91,13 +93,13 @@
       <div class="lesson-stuff">
 
         <!-- Breadcrumb -->
-        <nav aria-label="breadcrumb">
+        <div aria-label="breadcrumb">
           <ol class="breadcrumb mt-2 mb-4">
             <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
             <li class="breadcrumb-item"><a href="../grade-6-main.html">Grade 6</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Lesson 01</li>
+            <li class="breadcrumb-item current" aria-current="page">Lesson 01</li>
           </ol>
-        </nav>
+        </div>
 
         <!-- Table of Contents -->
         <div class="accordion" id="accordionExample">

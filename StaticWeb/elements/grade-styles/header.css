@@ -1,11 +1,14 @@
 /* SELECT-LESSON HEADER */
 
+.select-grade-header {
+  margin: 200px 0 60px 0;
+}
+
 .select-grade-header h4 {
   font-size: 18px;
   font-weight: 300;
   color: #d0bde9;
   text-align: center;
-  margin-top: 68px;
   animation: floatUp 0.8s ease-out;
 
   user-select: none;
@@ -25,4 +28,13 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
+
+@media (max-width: 768px) {
+  .select-grade-header {
+    margin: 160px 0 50px 0;
+  }
+  /* .select-grade-header h1 {
+    font-size: 40px;
+  } */
 }

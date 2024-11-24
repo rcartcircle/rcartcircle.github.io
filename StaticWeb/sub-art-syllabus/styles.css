@@ -31,12 +31,16 @@ body {
 
 /* HEADER */
 
+.select-grade-header {
+  margin-top: 124px;
+}
+
 .select-grade-header h4 {
   font-size: 18px;
   font-weight: 300;
   color: #c7ade9;
   text-align: center;
-  margin-top: 68px;
+  margin-top: 180px;
   animation: floatUp 0.8s ease-out;
 
   user-select: none;

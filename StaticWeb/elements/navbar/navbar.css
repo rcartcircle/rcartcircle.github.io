@@ -15,6 +15,7 @@ nav {
   position: absolute;
   top: 0;
   z-index: 10;
+  overflow-x: hidden;
   animation: floatDown 1s ease-out;
 }
 
@@ -64,7 +65,7 @@ nav .active {
 /* Responsive */
 @media (max-width: 750px) {
   .nav-items {
-      position: fixed;
+      position: absolute;
       top: 0;
       right: 0;
       height: 100vh;
@@ -114,6 +115,9 @@ nav .active {
       color: #edff4c;
   }
 
+  #check:checked ~ nav {
+      overflow-x: visible;
+  }
   #check:checked ~ .nav-items {
       width: 100%;
       right: 0;

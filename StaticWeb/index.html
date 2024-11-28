@@ -22,79 +22,28 @@
     <!-- Navbar -->
 
     <nav class="navbar">
-        <a href="/" class="logo">Logo</a>
+        <a href="/StaticWeb/index.html" class="logo" id="left-logo">
+            <img src="assets/logo.png" alt="logo" />
+        </a>
         <button class="menu-button">
             <span></span>
             <span></span>
             <span></span>
         </button>
         <div class="nav-links">
-            <a href="/" aria-current="page">Home</a>
-            <a href="/page2.html">Other page</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="/StaticWeb/index.html" aria-current="page">Home</a>
+            <a href="/StaticWeb/sub-art-syllabus/select-grade.html">Art Syllabus</a>
+
+            <a href="/StaticWeb/index.html" class="logo" id="center-logo">
+                <img src="assets/logo.png" alt="logo" />
+            </a>
+
+            <a href="/StaticWeb/sub-learning-portal/learning-portal.html">Learning Portal</a>
+            <a href="/StaticWeb/index.html#art-papers-bot-card">Papers Bot</a>
         </div>
     </nav>
 
-    <script>
-        const menuButton = document.querySelector('.menu-button');
-        const navLinks = document.querySelector('.nav-links');
-        const navbar = document.querySelector('.navbar');
-        let lastScrollY = window.scrollY;
-        let scrollTimeout;
-
-        if (menuButton && navLinks) {
-            menuButton.addEventListener('click', () => {
-            menuButton.classList.toggle('active');
-            navLinks.classList.toggle('active');
-            document.body.classList.toggle('menu-open');
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', (e) => {
-            if (!navLinks.contains(e.target) && !menuButton.contains(e.target)) {
-                menuButton.classList.remove('active');
-                navLinks.classList.remove('active');
-                document.body.classList.remove('menu-open');
-            }
-            });
-
-            // Close menu when pressing escape key
-            document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                menuButton.classList.remove('active');
-                navLinks.classList.remove('active');
-                document.body.classList.remove('menu-open');
-            }
-            });
-
-            // Handle navbar slide effect on scroll with debouncing
-            let ticking = false;
-            
-            // window.addEventListener('scroll', () => {
-            //   if (!ticking) {
-            //     window.requestAnimationFrame(() => {
-            //       const currentScrollY = window.scrollY;
-            //       const scrollingDown = currentScrollY > lastScrollY;
-                
-            //       // Only trigger the slide effect if we're scrolling more than 5px
-            //       if (Math.abs(currentScrollY - lastScrollY) > 5) {
-            //         if (scrollingDown && currentScrollY > 100) {
-            //           navbar.classList.add('slide-up');
-            //         } else {
-            //           navbar.classList.remove('slide-up');
-            //         }
-            //       }
-                
-            //       lastScrollY = currentScrollY;
-            //       ticking = false;
-            //     });
-                
-            //     ticking = true;
-            //   }
-            // }, { passive: true });
-        }
-    </script>
+    <script src="elements/navbar/navbar.js"></script>
       
     <!-- HERO -->
 
@@ -140,22 +89,6 @@
             </div>
         </a>
     </section>
-
-    <section class="sub-project mx-md-5 my-0 py-1" id="art-trivia-card">
-        <a href="sub-art-trivia/art-trivia.html" class="card mx-4 mx-md-4 my-4">
-            <div class="container">
-                <div class="row px-4">
-                    <div class="card-body col-12 col-md-8">
-                        <h2 class="card-title">Art Trivia<span class="material-symbols-outlined card-arrow">east</span></h2>
-                        <p class="card-text">Art Circle hosts an engaging Art Trivia, challenging participants' knowledge of art history, styles, and iconic works through interactive questions and team-based competition.</p>
-                    </div>
-                    <div class="card-icon col-12 col-md-4">
-                        <img src="assets/icon-1.png" alt="icon-1" />
-                    </div>
-                </div>
-            </div>
-        </a>
-    </section>
     
     <section class="sub-project mx-md-5 my-0 py-1" id="art-papers-bot-card">
         <a href="learning-portal/select-grade.html" class="card mx-4 mx-md-4 my-4">
@@ -189,12 +122,12 @@
         </a>
     </section>
 
-    <section class="sub-project mx-md-5 my-0 py-1" id="quizzard-card">
-        <a href="learning-portal/select-grade.html" class="card mx-4 mx-md-4 my-4">
+    <section class="sub-project mx-md-5 my-0 py-1" id="art-trivia-card">
+        <a href="sub-art-trivia/art-trivia.html" class="card mx-4 mx-md-4 my-4">
             <div class="container">
                 <div class="row px-4">
                     <div class="card-body col-12 col-md-8">
-                        <h2 class="card-title">Quizzard<span class="material-symbols-outlined card-arrow">east</span></h2>
+                        <h2 class="card-title">Art Trivia<span class="material-symbols-outlined card-arrow">east</span></h2>
                         <p class="card-text">Art Circle hosts an engaging Art Trivia, challenging participants' knowledge of art history, styles, and iconic works through interactive questions and team-based competition.</p>
                     </div>
                     <div class="card-icon col-12 col-md-4">
@@ -205,12 +138,12 @@
         </a>
     </section>
 
-    <section class="sub-project mx-md-5 my-0 py-1" id="edvision-card">
+    <section class="sub-project mx-md-5 my-0 py-1" id="workshop-card">
         <a href="learning-portal/select-grade.html" class="card mx-4 mx-md-4 my-4">
             <div class="container">
                 <div class="row px-4">
                     <div class="card-body col-12 col-md-8">
-                        <h2 class="card-title">Edvision<span class="material-symbols-outlined card-arrow">east</span></h2>
+                        <h2 class="card-title">Workshop<span class="material-symbols-outlined card-arrow">east</span></h2>
                         <p class="card-text">Art Circle hosts an engaging Art Trivia, challenging participants' knowledge of art history, styles, and iconic works through interactive questions and team-based competition.</p>
                     </div>
                     <div class="card-icon col-12 col-md-4">

@@ -7,6 +7,10 @@ if (menuButton && navLinks) {
     menuButton.classList.toggle('active');
     navLinks.classList.toggle('active');
     document.body.classList.toggle('menu-open');
+    navbar.style.top = menuButton.classList.contains('active') ? '0' : '16px';
+    navbar.style.marginLeft = menuButton.classList.contains('active') ? '0' : '1rem';
+    navbar.style.marginRight = menuButton.classList.contains('active') ? '0' : '1rem';
+    navbar.style.paddingTop = menuButton.classList.contains('active') ? '2rem' : '0.8rem';
   });
 
   // Close menu when clicking outside
@@ -24,6 +28,10 @@ if (menuButton && navLinks) {
       menuButton.classList.remove('active');
       navLinks.classList.remove('active');
       document.body.classList.remove('menu-open');
+      navbar.style.top = menuButton.classList.contains('active') ? '0' : '16px';
+      navbar.style.marginLeft = menuButton.classList.contains('active') ? '0' : '1rem';
+      navbar.style.marginRight = menuButton.classList.contains('active') ? '0' : '1rem';
+      navbar.style.paddingTop = menuButton.classList.contains('active') ? '2rem' : '0.8rem';
     }
   });
 }

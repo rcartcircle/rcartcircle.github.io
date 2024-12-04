@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+Sinhala:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+Sinhala:wght@100..900&display=swap');
 
+@import '/StaticWeb/elements/navbar/navbar.css';
+@import '/StaticWeb/elements/footer/footer.css';
+@import '/StaticWeb/elements/scrollbar/scrollbar.css';
+
 :root {
     --text-color: #fdfdff;
 }
@@ -51,38 +55,40 @@ body {
     font-size: 72px;
     font-weight: 500;
     margin-bottom: 20px;
-    animation: floatUp 1s ease-out;
+    animation: floatUp 1.5s ease-out;
 }
 
 .hero-subtitle {
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 60px;
-    animation: floatUp 1s ease-out;
+    animation: floatUp 1.5s ease-out;
 }
 
 .hero-cta {
-  font-size: 16px;
-  padding: 14px 48px;
-  color: #fff;
-  background-color: rgba(240, 169, 230, 0.2);
-  border: 1px solid rgba(237, 242, 247, 0.6);
-  border-radius: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: all 0.4s;
-  cursor: pointer;
-  animation: floatUp 1.2s ease-out;
+    font-size: 16px;
+    padding: 14px 48px;
+    color: #fff;
+    background-color: rgba(240, 169, 230, 0.2);
+    border: 1px solid rgba(237, 242, 247, 0.6);
+    border-radius: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    cursor: pointer;
+    animation: floatUp 1.2s ease-out;
 }
+
 .hero-cta:hover {
-  transform: translate(0, -4px);
-  border: 1px solid rgb(237, 242, 247);
+    transform: translate(0, -4px);
+    border: 1px solid rgb(237, 242, 247);
 }
 
 @media screen and (max-width: 768px) {
     .hero-wrap {
         margin-top: 160px;
     }
+
     .hero-title {
         font-size: 48px;
         line-height: 95%;
@@ -90,17 +96,88 @@ body {
         margin-top: 40px;
         margin-bottom: 50px;
     }
+
     .hero-subtitle {
         font-size: 16px;
         padding: 0 80px;
         margin-bottom: 65px;
     }
+
     .hero-cta {
         font-size: 14px;
         padding: 14px 40px;
     }
 }
 
+
+/* ANIMATED TEXT STRIP  */
+
+/* #animated-text-strip {
+    width: 110%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    overflow: hidden;
+    transform: rotate(-2deg);
+    margin: 5rem 0 10rem 0;
+    background-color: rgba(124, 121, 76, 0.4);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 1rem 0;
+    border-top: 1px solid rgb(248, 243, 178, 0.6);
+    border-bottom: 1px solid rgb(248, 243, 178, 0.6);
+}
+
+#animated-text-strip .marquee {
+    white-space: nowrap;
+    animation: marquee 6s linear infinite;
+    max-width: none;
+    color: rgb(248, 245, 197);
+    font-size: 1.5rem;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+} */
+
+.marquee {
+    width: 100%;
+    overflow: hidden !important;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    margin: 2rem 0;
+}
+
+.marquee-content {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+}
+
+.marquee-item {
+    padding: 0 2rem;
+    color: #333;
+    font-weight: 500;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
 
 /* SUB-PROJECT CARD DESIGN */
@@ -128,22 +205,28 @@ body {
 #learning-portal-card .card {
     background-image: url('assets/card-bg-learning-portal.png');
 }
+
 #art-syllabus-card .card {
     background-image: url('assets/card-bg-learning-portal.png');
 }
+
 #art-trivia-card .card {
     background-image: url('assets/card-bg-art-trivia.png');
 }
+
 #art-papers-bot-card .card {
     background-image: url('assets/card-bg-art-papers-bot.png');
 }
+
 #instruction-book-card .card {
     background-image: url('assets/card-bg-art-papers-bot.png');
 }
+
 #quizzard-card .card {
     background-image: url('assets/card-bg-quizzard.png');
 }
-#edvision-card .card {
+
+#workshop-card .card {
     background-image: url('assets/card-bg-edvision.png');
 }
 
@@ -184,14 +267,17 @@ body {
         align-items: center;
         background-size: cover;
     }
+
     .card-body {
         gap: 16px;
         text-align: left;
         margin-bottom: 10px;
     }
+
     .card-title {
         font-size: 32px;
     }
+
     .card-text {
         font-size: 16px;
         font-weight: 250;
@@ -209,11 +295,13 @@ body {
     opacity: 0;
     transition: all 0.6s ease-out;
 }
+
 .card:hover .card-arrow {
     opacity: 1;
     transition: all 0.6s ease-out;
     animation: floatLeft 0.6s ease-out;
 }
+
 .card:not(:hover) .card-arrow {
     transition: all 0.6s ease-out;
     transform: translate(-15px);
@@ -255,11 +343,12 @@ body {
 
 @keyframes floatUp {
     from {
-      transform: translateY(30px);
-      opacity: 0;
+        transform: translateY(40px);
+        opacity: 0;
     }
+
     to {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
 }

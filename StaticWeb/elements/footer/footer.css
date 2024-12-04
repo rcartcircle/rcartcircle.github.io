@@ -1,5 +1,5 @@
 .footer {
-  background-color: rgb(45, 45, 56);
+  background-color: rgb(31, 31, 39);
   padding: 3rem 5rem 1.5rem 5rem;
   margin-top: auto;
   animation: floatUp 1s ease-out forwards;
@@ -133,15 +133,53 @@
 .footer-contact {
   align-self: flex-start;
 }
-/* .footer-contact .contact-info a {
-  padding: 0;
-  margin: auto 0;
-} */
-.footer-contact .contact-info span {
-  font-size: 1rem;
-  padding: 0;
-  margin: 0 0;
+.footer-contact .contact-info {
+  margin-bottom: 0.5rem;
 }
+
+.footer-contact .contact-info p {
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+.footer-contact .contact-info div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 10px;
+}
+.footer-contact .contact-info div span {
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+.footer-contact .contact-info div a {
+  padding: 0;
+  margin: 0;
+}
+/* .footer-contact .contact-info a div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+.footer-contact .contact-info a div span {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+.footer-contact .contact-info a div p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-contact .contact-info a::after {
+  margin-top: 8px;
+} */
 
 .footer-visit {
   display: flex;
@@ -149,7 +187,7 @@
   align-items: start;
   align-self: flex-start;
   gap: 2rem;
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 1.5rem;
   border-radius: 18px;
   border: 1px solid #9492a1;
 }

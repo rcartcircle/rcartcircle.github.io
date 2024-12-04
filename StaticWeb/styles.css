@@ -3,6 +3,7 @@
 
 @import '/StaticWeb/elements/navbar/navbar.css';
 @import '/StaticWeb/elements/footer/footer.css';
+@import '/StaticWeb/elements/scrollbar/scrollbar.css';
 
 :root {
     --text-color: #fdfdff;

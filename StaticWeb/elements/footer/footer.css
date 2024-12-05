@@ -1,8 +1,9 @@
 .footer {
   background-color: rgb(31, 31, 39);
-  padding: 3rem 5rem 1.5rem 5rem;
+  padding: 3.5rem 5rem 1.5rem 5rem;
   margin-top: auto;
   animation: floatUp 1s ease-out forwards;
+  font-family: 'DM Sans', sans-serif;
 }
 
 /* FOOTER BACKGROUND */
@@ -151,7 +152,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.8rem;
   margin-left: 10px;
 }
 .footer-contact .contact-info div span {

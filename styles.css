@@ -3,11 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@100..900&display=swap');
 
-/* IMPORT NAVIGATION STYLES */
-@import '/StaticWeb/elements/navbar/navbar.css';
-@import '/StaticWeb/elements/footer/footer.css';
-@import '/StaticWeb/elements/scrollbar/scrollbar.css';
-
 :root {
     --text-color: #fdfdff;
 }

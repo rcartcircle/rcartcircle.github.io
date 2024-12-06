@@ -49,46 +49,68 @@
 
     <main class="hero">
         <div class="hero-wrap">
-            <h1 class="hero-title">Welcome to Chithra Akura</h1>
+            <h1 class="hero-title">Chithra Akura</h1>
             <p class="hero-subtitle">A project by the Royal College Art Circle</p>
             <button class="hero-cta" onclick="location.href='#art-syllabus-card'">Explore</button>
         </div>
+        <div class="grad-overlay"></div>
     </main>
 
-    <!-- ANIMATED TEXT STRIP -->
+    <!-- HORIZONTAL SCROLLING TEXT -->
 
-    <!-- <div id="animated-text-strip">
-        <span class="marquee">Chithra Akura 2024 ⚡ Royal College Art Circle&nbsp;✨&nbsp;</span>
-        <span class="marquee">Chithra Akura 2024 ⚡ Royal College Art Circle&nbsp;✨&nbsp;</span>
-        <span class="marquee">Chithra Akura 2024 ⚡ Royal College Art Circle&nbsp;✨&nbsp;</span>
-    </div> -->
-
-    <div class="marquee">
-        <div class="marquee-content">
-            <span class="marquee-item">Breaking News</span>
-            <span class="marquee-item">Latest Updates</span>
-            <span class="marquee-item">Special Announcements</span>
-            <span class="marquee-item">Featured Content</span>
-            <span class="marquee-item">Important Information</span>
+    <div class="flow">
+        <div aria-hidden="true" class="flow-text" id="flow-1">
+            <span class="flow-wrapper">
+                <span class="flow-item">Learning</span>
+            </span>
+            <span class="flow-wrapper">
+                <span class="flow-item">Never</span>
+            </span>
+            <span class="flow-wrapper">
+                <span class="flow-item">Exhausts</span>
+            </span>
+            <span class="flow-wrapper">
+                <span class="flow-item">The</span>
+            </span>
+            <span class="flow-wrapper">
+                <span class="flow-item">Mind.</span>
+            </span>
+        </div>
+        <div aria-hidden="true" class="flow-text" id="flow-2">
+            <span class="flow-wrapper">
+                <span class="flow-item">Learning</span>
+            </span>
+            <span class="flow-wrapper">
+                <span class="flow-item">Never</span>
+            </span>
+            <span class="flow-wrapper">
+                <span class="flow-item">Exhausts</span>
+            </span>
+            <span class="flow-wrapper">
+                <span class="flow-item">The</span>
+            </span>
+            <span class="flow-wrapper">
+                <span class="flow-item">Mind.</span>
+            </span>
+        </div>
+        <div aria-hidden="true" class="flow-text" id="flow-3">
+            <span class="flow-wrapper">
+                <span class="flow-item">Learning</span>
+            </span>
+            <span class="flow-wrapper">
+                <span class="flow-item">Never</span>
+            </span>
+            <span class="flow-wrapper">
+                <span class="flow-item">Exhausts</span>
+            </span>
+            <span class="flow-wrapper">
+                <span class="flow-item">The</span>
+            </span>
+            <span class="flow-wrapper">
+                <span class="flow-item">Mind.</span>
+            </span>
         </div>
     </div>
-
-    <script>
-        const marqueeContent = document.querySelector('.marquee-content');
-
-        // Clone the content for seamless scrolling
-        const content = marqueeContent.innerHTML;
-        marqueeContent.innerHTML = content + content;
-
-        // Pause on hover
-        marqueeContent.addEventListener('mouseenter', () => {
-            marqueeContent.style.animationPlayState = 'paused';
-        });
-
-        marqueeContent.addEventListener('mouseleave', () => {
-            marqueeContent.style.animationPlayState = 'running';
-        });
-    </script>
     
     <!-- SUB-PROJECTS -->
 

@@ -4,9 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@100..900&display=swap');
 
 /* IMPORT NAVIGATION STYLES */
-@import url('https://chamithu-vithanage.github.io/chithra-akura-new/elements/navbar/navbar.css');
-@import url('https://chamithu-vithanage.github.io/chithra-akura-new/elements/footer/footer.css');
-@import url('https://chamithu-vithanage.github.io/chithra-akura-new/elements/scrollbar/scrollbar.css');
+@import url('/elements/navbar/navbar.css');
+@import url('/elements/footer/footer.css');
+@import url('/elements/scrollbar/scrollbar.css');
 
 :root {
     --text-color: #fdfdff;

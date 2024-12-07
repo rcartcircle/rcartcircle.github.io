@@ -14,69 +14,52 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="/StaticWeb/elements/grade-styles/background.css">
-  <link rel="stylesheet" href="/StaticWeb/elements/grade-styles/card.css">
-  <link rel="stylesheet" href="/StaticWeb/elements/grade-styles/header.css">
   
 </head>
 <body>
 
   <!-- Navbar -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand px-1" href="#">
-        <img src="../assets/logo.png" alt="navbar-logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="material-symbols-outlined hamburger" id="hamburger" onclick="toggleNavMenu()">menu</span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-4 py-4 py-md-0">
-          <li class="nav-item">
-            <a class="nav-link py-2 py-md-0 px-md-3" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link active dropdown-toggle py-2 py-md-0 px-md-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Grades
-            </a>
-            <ul class="dropdown-menu px-3 py-3 my-2" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item rounded py-2" href="#">Grade 6</a></li>
-                <li><a class="dropdown-item rounded py-2" href="#">Grade 7</a></li>
-                <li><a class="dropdown-item rounded py-2" href="#">Grade 8</a></li>
-                <li><a class="dropdown-item rounded py-2" href="#">Grade 9</a></li>
-                <li><a class="dropdown-item rounded py-2" href="#">Grade 10</a></li>
-                <li><a class="dropdown-item rounded py-2" href="#">Grade 11</a></li>
-              <!-- <li><hr class="dropdown-divider"></li> -->
-              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link py-2 py-md-0 px-md-3" href="#">About</a>
-          </li>
-        </ul>
-        <!-- <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
-      </div>
+  <nav class="navbar">
+    <a href="/index.html" class="logo" id="left-logo">
+        <img src="/assets/logo.png" alt="logo" />
+    </a>
+    <button class="menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="nav-links">
+        <a href="/index.html" aria-current="page">Home</a>
+        <a href="/sub-art-syllabus/select-grade.html">Art Syllabus</a>
+
+        <a href="/index.html" class="logo" id="center-logo">
+            <img src="/assets/logo.png" alt="logo" />
+        </a>
+
+        <a href="/sub-learning-portal/learning-portal.html">Learning Portal</a>
+        <a href="/index.html#art-papers-bot-card">Papers Bot</a>
     </div>
   </nav>
 
+  <script src="/elements/navbar/navbar.js"></script>
 
-  <header class="select-grade-header mx-3">
+
+  <!-- Page Title -->
+  <header class="select-grade-header mx-5">
     <h4>Grade 11</h4>
     <h1>Select Your Lesson</h1>
   </header>
 
+  <!-- LESSON CARDS -->
   <main class="lesson-cards">
     <div class="container">
       <div class="row mx-0 mx-md-2 my-4 my-md-5 gy-4 gy-md-5 gx-4 gx-md-5 justify-content-center">
         <div class="col-12 col-md-6">
-          <a href="../grade-6/01/g6-1.html" class="card">
+          <a href="01/g11-1.html" class="card">
             <div class="card-body">
               <h6 class="card-subtitle">01 පාඩම</h6>
-              <h5 class="card-title">වෙසක් උත්සවය ආශ්‍රිත කලා අංග රස විඳිමු</h5>
+              <h5 class="card-title">මුදලිඳු ඒ. සී. ජී. එස්. අමරසේකර ශිල්පියාගේ නිර්මාණ අගයමු</h5>
             </div>
             <div class="card-drop px-0 px-md-3" id="vesak-lantern">
               <img src="assets/vesak-lantern-icon.png" alt="vesak_lantern" />

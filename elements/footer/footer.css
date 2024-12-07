@@ -16,7 +16,7 @@
   height: 100%;
   opacity: 0.5;
   mask-image: linear-gradient(to top, rgba(0, 0, 0), rgba(0, 0, 0, 0.1));
-  background-image: url(https://chamithu-vithanage.github.io/chithra-akura-new/assets/footer-bg-5.png);
+  background-image: url(/assets/footer-bg-5.png);
   background-size: cover;
   background-position: bottom right;
   background-repeat: no-repeat;

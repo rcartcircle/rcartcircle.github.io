@@ -28,6 +28,23 @@
   padding: 5px 0 5px 0;
 }
 
+.lesson-dl {
+  font-family: 'Noto Sans Sinhala', sans-serif;
+}
+
+.lesson-dl dt {
+  font-weight: 650;
+  padding: 15px 0;
+}
+
+.lesson-dl dd {
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  background-color: var(--color-background);
+}
+
+
 @media (max-width: 600px) {
   .lesson-ul, .lesson-ol {
     font-size: 16px;
@@ -45,5 +62,15 @@
   }
   .lesson-inline-ul li, .lesson-inline-ol li {
     font-size: 0.9rem;
+  }
+  .lesson-dl {
+    font-size: 14px;
+  }
+  .lesson-dl dt {
+    padding: 15px 0;
+  }
+  .lesson-dl dd {
+    padding: 20px;
+    margin-bottom: 20px;
   }
 }

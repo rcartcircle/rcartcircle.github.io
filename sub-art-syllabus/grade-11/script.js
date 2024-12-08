@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const totalLessons = 8; //Set the total number of lessons
+  const totalLessons = 21; //Set the total number of lessons
   const currentPath = window.location.pathname;
   const currentLessonMatch = currentPath.match(/g11-(\d+)\.html/); //Change g6 to g<your grade>; Assuming g6-<lesson number>.html format
   const currentLessonNumber = currentLessonMatch ? parseInt(currentLessonMatch[1]) : 0;

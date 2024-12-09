@@ -9,7 +9,7 @@
 @import url('/elements/scrollbar/scrollbar.css');
 
 :root {
-    --text-color: #fdfdff;
+    --text-color: #fffdff;
 }
 
 * {
@@ -30,19 +30,17 @@ body {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat; */
-    background-color: #0d0d0e;
+    background-color: #1b1b1f;
     overflow-x: hidden;
 }
-
-
 
 /* HERO */
 
 .hero {
     position: relative;
     width: 100%;
-    height: 650px;
-    margin: 0;
+    height: 150vh;
+    margin: 0 0 50px 0;
     display: flex;
     justify-content: center;
 }
@@ -51,12 +49,12 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    filter: brightness(0.8) contrast(1.1) saturate(1.2);
-    background-image: url(assets/hero-bg.png);
+    filter: brightness(0.65) contrast(1) saturate(1.2);
+    background-image: url(assets/hero-bg-4.png);
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
-    mask-image: linear-gradient(to top, transparent 1%, rgb(5, 5, 5) 40%);
+    mask-image: linear-gradient(to top, transparent 10%, rgb(5, 5, 5) 50%);
     overflow: hidden;
 }
 
@@ -72,77 +70,42 @@ body {
     font-size: 10rem;
     font-weight: 600;
     letter-spacing: -6px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     animation: floatUp 1.5s ease-out;
     filter: drop-shadow(0 24px 64px rgba(28, 26, 29, 0.8));
 }
 
 .hero-subtitle {
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 60px;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 42px;
     animation: floatUp 1.5s ease-out;
+    color: white;
 }
 
 .hero-cta {
-    /* width: 100px;
-    height: 100px; */
-    font-size: 16px;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-    color: #fff;
-    background-color: transparent;
-    /* border: 1px solid rgba(255, 255, 255, 0.6); */
-    /* border-radius: 50%; */
-    border: none;
-    font-weight: 500;
-    transition: all 0.4s;
-    cursor: pointer;
-    animation: floatUp 1.2s ease-out;
     position: relative;
+    padding: 1.2rem 3rem;
+    align-items: center;
+    border-radius: 50px;
+    border: none;
+    color: rgb(253, 253, 255);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    background-color: rgba(102, 102, 119, 0.25);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset -1px 1px 2px rgba(183, 184, 187, 0.15);
+    transition: all 0.3s ease-out;
+    animation: floatUp 1.5s ease-out;
+    animation-delay: 0.2s;
 }
 
-.hero-cta::before {
-    content: '';
-    position: absolute;
-    /* top: -25px;
-    left: 20px; */
-    margin: 0 auto;
-    width: 100px;
-    height: 90px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
+.hero-cta:hover {
+    background-color: rgba(144, 144, 170, 0.25);
 }
-
-.hero-cta::after {
-    content: '';
-    position: absolute;
-    top: 80px;
-    left: 65px;
-    width: 1px;
-    height: 0px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    transition: all 0.4s ease-out;
-}
-
-.hero-cta:hover::after {
-    content: '';
-    position: absolute;
-    top: 80px;
-    left: 65px;
-    width: 1px;
-    height: 80px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-}
-
-/* .hero-cta:hover {
-    transform: translate(0, -4px);
-    border: 1px solid rgb(237, 242, 247);
-} */
 
 @media screen and (max-width: 768px) {
     .hero-wrap {
@@ -170,23 +133,57 @@ body {
 
 /* HORIZONTAL SCROLL TEXT */
 
+.flow-container {
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
 .flow {
     justify-content: flex-start;
     align-items: stretch;
     display: flex;
-
     max-width: 100%;
-    background-color: #0d0d0e;
+    background-color: transparent;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.flow-text {
+.flow .flow-text {
     animation-name: horizontalScrollText;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     pointer-events: none;
     font-size: 10vw;
-    color: azure;
+    color: var(--text-color);
+    font-weight: 500;
+    letter-spacing: -4px;
+
+    white-space: nowrap;
+    display: block;
+    padding-left: .2em;
+    padding-right: .2em;
+    transform: translate(-100%);
+}
+
+.flow-reverse {
+    justify-content: flex-start;
+    align-items: stretch;
+    display: flex;
+    max-width: 100%;
+    background-color: transparent;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.flow-reverse .flow-text {
+    animation-name: horizontalScrollTextReverse;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    pointer-events: none;
+    font-size: 10vw;
+    color: var(--text-color);
     font-weight: 500;
     letter-spacing: -4px;
 
@@ -207,6 +204,18 @@ body {
         -webkit-transform: translate(-200%, 0px);
         -ms-transform: translate(-200%, 0px);
         transform: translate(-200%, 0px);
+    }
+}
+@keyframes horizontalScrollTextReverse {
+    0% {
+        -webkit-transform: translate(-100%, 0px);
+        -ms-transform: translate(-100%, 0px);
+        transform: translate(-100%, 0px);
+    }
+    100% {
+        -webkit-transform: translate(00%, 0px);
+        -ms-transform: translate(00%, 0px);
+        transform: translate(00%, 0px);
     }
 }
 
@@ -232,10 +241,42 @@ body {
 
 /* SUB-PROJECT CARD DESIGN */
 
+.sub-project-container {
+    margin: 0;
+    padding: 180px 0;
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.sub-project-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.65) contrast(1) saturate(1.2);
+    background-image: url(assets/sub-project-bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    mask-image: linear-gradient(to top, transparent 1%, rgb(5, 5, 5) 50%, transparent 99%);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.sub-project-heading {
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 80px 0 160px 0;
+    text-align: center;
+}
+
 .card {
     min-height: 350px;
     height: fit-content;
-    /* height: 350px; */
     text-decoration: none;
     background-color: rgb(201, 248, 250);
     box-shadow: 0 24px 64px rgba(29, 25, 32, 0.3);
@@ -402,3 +443,52 @@ body {
         opacity: 1;
     }
 }
+
+
+/* MOTTO SECTION */
+
+.motto-container {
+    margin: 100px 0;
+    padding: 0;
+}
+
+.motto {
+    padding: 0;
+    margin: 0 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 0px;   
+}
+
+.motto h2 {
+    font-size: 6rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    letter-spacing: -2px;
+    line-height: 1;
+}
+
+.motto .line-2 {
+    margin-left: 150px;
+}
+
+
+.about-us-section {
+    margin: 0;
+    padding: 0;
+}
+
+.about-us-heading {
+    margin: 0;
+    padding: 0; 
+
+    color: var(--text-color);
+}
+
+

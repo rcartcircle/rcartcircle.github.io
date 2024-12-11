@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chithra Akura '24</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Google Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/StaticWeb/elements/grade-styles/background.css">
+  <link rel="stylesheet" href="/StaticWeb/elements/grade-styles/card.css">
+  <link rel="stylesheet" href="/StaticWeb/elements/grade-styles/header.css">
+  <link rel="stylesheet" href="/StaticWeb/elements/navbar/navbar.css">
+  
+</head>
+<body>
+
+  <!-- Navbar -->
+
+  <nav>
+    <input type="checkbox" id="check" />
+    <label for="check" class="menu">
+        <span class="material-symbols-outlined" id="menu-icon">menu</span>
+    </label>
+    <div class="logo">
+        <img src="/StaticWeb/assets/logo.png" alt="chithra-akura-logo" draggable="false">
+    </div>
+    <div class="nav-items">
+        <ul class="overview">
+            <li><a href="/StaticWeb/index.html">Home</a></li>
+            <li><a href="/StaticWeb/learning-portal/select-grade.html" class="active">Learning Portal</a></li>
+            <li><a href="#">Art Trivia</a></li>
+            <li><a href="#">Quizzard</a></li>
+            <li><a href="#">Papers Bot</a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      const checkbox = document.getElementById('check');
+      const menuIcon = document.getElementById('menu-icon');
+
+      checkbox.addEventListener('change', function() {
+          if (checkbox.checked) {
+          menuIcon.textContent = 'close';
+          menuIcon.style.transition = 'transform 0.2s ease-out';
+          menuIcon.style.transform = 'rotate(90deg)';
+          } else {
+          menuIcon.textContent = 'menu';
+          menuIcon.style.transition = 'transform 0.2s ease-out';
+          menuIcon.style.transform = 'rotate(0deg)';
+          }
+      });
+      });
+  </script>
+
+  <!-- Page Title image -->
+  <header class="select-grade-header mx-5">
+    <h4>Grade 06</h4>
+    <h1>Select Your Lesson</h1>
+  </header>
+
+  <main class="lesson-cards">
+    <div class="container">
+      <div class="row mx-0 mx-md-2 my-4 my-md-5 gy-4 gy-md-5 gx-4 gx-md-5 justify-content-center">
+        <div class="col-12 col-md-6">
+          <a href="01/g6-1.html" class="card">
+            <div class="card-body">
+              <h6 class="card-subtitle">01 පාඩම</h6>
+              <h5 class="card-title">වෙසක් උත්සවය ආශ්‍රිත කලා අංග රස විඳිමු</h5>
+            </div>
+            <div class="card-drop px-0 px-md-3" id="vesak-lantern">
+              <img src="assets/vesak-lantern-icon.png" alt="vesak_lantern" />
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="02/g6-2.html" class="card">
+            <div class="card-body">
+              <h6 class="card-subtitle">02 පාඩම</h6>
+              <h5 class="card-title">තෛපොංගල් උත්සවය ආශ්‍රිත චිත්‍රමය අංග හඳුනා ගනිමු</h5>
+            </div>
+            <div class="card-drop px-0 px-md-3" id="thai-pongal">
+              <img src="assets/thai-pongal-icon.png" alt="thai-pongal" />
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="03/g6-3.html" class="card">
+            <div class="card-body">
+              <h6 class="card-subtitle">03 පාඩම</h6>
+              <h5 class="card-title">දානය, දයාව පිරි රාමසාන් උත්සවය</h5>
+            </div>
+            <div class="card-drop px-0 px-md-3" id="vesak-lantern">
+              <img src="assets/vesak-lantern-icon.png" alt="vesak_lantern" />
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="../grade-6/01/g6-1.html" class="card">
+            <div class="card-body">
+              <h6 class="card-subtitle">04 පාඩම</h6>
+              <h5 class="card-title">නත්තල් උත්සවය හා බැඳි නිර්මාණ අගයමු</h5>
+            </div>
+            <div class="card-drop px-0 px-md-3" id="vesak-lantern">
+              <img src="assets/vesak-lantern-icon.png" alt="vesak_lantern" />
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="../grade-6/01/g6-1.html" class="card">
+            <div class="card-body">
+              <h6 class="card-subtitle">05 පාඩම</h6>
+              <h5 class="card-title">බෞද්ධ ස්තූපයක මූලිකාංග හා ස්තූප වර්ග හඳුනා ගනිමු</h5>
+            </div>
+            <div class="card-drop px-0 px-md-3" id="vesak-lantern">
+              <img src="assets/vesak-lantern-icon.png" alt="vesak_lantern" />
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="../grade-6/01/g6-1.html" class="card">
+            <div class="card-body">
+              <h6 class="card-subtitle">06 පාඩම</h6>
+              <h5 class="card-title">හින්දු කෝවිලක මූලිකාංග හා එහි කලා නිර්මාණ හඳුනා ගනිමු</h5>
+            </div>
+            <div class="card-drop px-0 px-md-3" id="vesak-lantern">
+              <img src="assets/vesak-lantern-icon.png" alt="vesak_lantern" />
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="../grade-6/01/g6-1.html" class="card">
+            <div class="card-body">
+              <h6 class="card-subtitle">07 පාඩම</h6>
+              <h5 class="card-title">ඉස්ලාම් පල්ලියක මූලිකාංග හා එහි කලා නිර්මාණ හඳුනා ගනිමු</h5>
+            </div>
+            <div class="card-drop px-0 px-md-3" id="vesak-lantern">
+              <img src="assets/vesak-lantern-icon.png" alt="vesak_lantern" />
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="../grade-6/01/g6-1.html" class="card">
+            <div class="card-body">
+              <h6 class="card-subtitle">08 පාඩම</h6>
+              <h5 class="card-title">ක‍්‍රිස්තියානි දේවස්ථානයක නිර්මාණ ලක්ෂණ හඳුනා ගනිමු</h5>
+            </div>
+            <div class="card-drop px-0 px-md-3" id="vesak-lantern">
+              <img src="assets/vesak-lantern-icon.png" alt="vesak_lantern" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

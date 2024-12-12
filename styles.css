@@ -26,10 +26,6 @@ html {
 body {
     font-family: 'DM Sans', sans-serif;
     scroll-behavior: smooth;
-    /* background-image: url('assets/bg-3.jpg');
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat; */
     background-color: #1b1b1f;
     overflow-x: hidden;
 }
@@ -154,7 +150,7 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     pointer-events: none;
-    font-size: 10vw;
+    font-size: 8vw;
     color: var(--text-color);
     font-weight: 500;
     letter-spacing: -4px;
@@ -182,7 +178,7 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     pointer-events: none;
-    font-size: 10vw;
+    font-size: 8vw;
     color: var(--text-color);
     font-weight: 500;
     letter-spacing: -4px;
@@ -269,8 +265,17 @@ body {
     font-size: 5rem;
     font-weight: 600;
     color: var(--text-color);
-    margin: 80px 0 160px 0;
+    margin: 100px 0 140px 0;
     text-align: center;
+}
+
+.sub-project {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.sub-project.animate {
+    animation: fadeInUp 1s forwards;
 }
 
 .card {
@@ -498,7 +503,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    filter: brightness(0.65) contrast(1) saturate(1.2) hue-rotate(-45deg);
+    filter: brightness(0.8) contrast(1) saturate(1.2) hue-rotate(-45deg);
     background-image: url(assets/about-us-bg.jpg);
     background-size: cover;
     background-position: top center;
@@ -550,6 +555,9 @@ body {
     padding: 0 150px; 
     color: var(--text-color);
 }
+.project-team-heading.animate {
+    animation: fadeInUp 1s forwards;
+}
 
 .project-team-heading h2 {
     font-size: 5rem;
@@ -575,7 +583,7 @@ body {
     text-align: center;
     margin: 20px 25px;
     padding: 30px 20px;
-    background-color: #1b1b1f;
+    background-color: #1e1e22;
     border-radius: 24px;
     display: flex;
     flex-direction: column;
@@ -586,7 +594,6 @@ body {
     transform: translateY(80px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
-  
 .team-member.animate {
     animation: fadeInUp 1s forwards;
 }
@@ -620,6 +627,94 @@ body {
 
 .team-member .social-icons a:hover {
     color: #007bff;
+}
+
+
+/* COUNTER SECTION */
+
+.counter-section {
+    margin: 0 0 180px 0;
+    padding: 0;
+}
+
+/* .counter-card {
+    padding: 2rem 0;
+    text-align: center;
+    background: transparent;
+    background: grey;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    margin: 2rem 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+} */
+
+.counter-card {
+    position: relative;
+    padding: 80px 0;
+    margin: 2rem 0.5rem;
+    color: var(--text-color);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.counter-card.animate {
+    animation: fadeInUp 1s forwards;
+}
+
+.counter-card-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.counter-card-border svg {
+    width: 100%;
+    height: 100%;
+}
+  
+.counter-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+  
+.counter-element {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    min-width: 200px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+  
+.counter-description {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    opacity: 0.9;
 }
 
 

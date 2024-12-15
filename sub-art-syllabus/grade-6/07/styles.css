@@ -4,21 +4,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@100..900&display=swap');
 
 /* IMPORT NAVIGATION STYLES */
-@import '/StaticWeb/elements/navbar/navbar.css';
-@import '/StaticWeb/elements/footer/footer.css';
+@import '/elements/navbar/navbar.css';
+@import '/elements/footer/footer.css';
 
 /* IMPORT ELEMENT STYLES */
-@import '/StaticWeb/elements/lesson-styles/back-arrow.css';
-@import '/StaticWeb/elements/lesson-styles/background.css';
-@import '/StaticWeb/elements/lesson-styles/breadcrumb.css';
-@import '/StaticWeb/elements/lesson-styles/content-table.css';
-@import '/StaticWeb/elements/lesson-styles/hero.css';
-@import '/StaticWeb/elements/lesson-styles/image-section.css';
-@import '/StaticWeb/elements/lesson-styles/lists.css';
-@import '/StaticWeb/elements/lesson-styles/main-image.css';
-@import '/StaticWeb/elements/lesson-styles/related-links.css';
-@import '/StaticWeb/elements/lesson-styles/scrollbar.css';
-@import '/StaticWeb/elements/lesson-styles/texts.css';
+@import '/elements/lesson-styles/back-arrow.css';
+@import '/elements/lesson-styles/background.css';
+@import '/elements/lesson-styles/breadcrumb.css';
+@import '/elements/lesson-styles/content-table.css';
+@import '/elements/lesson-styles/hero.css';
+@import '/elements/lesson-styles/image-section.css';
+@import '/elements/lesson-styles/lists.css';
+@import '/elements/lesson-styles/main-image.css';
+@import '/elements/lesson-styles/related-links.css';
+@import '/elements/lesson-styles/scrollbar.css';
+@import '/elements/lesson-styles/texts.css';
 
 /* ROOT VARIABLES */
 :root {

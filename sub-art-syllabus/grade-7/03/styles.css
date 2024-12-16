@@ -1,8 +1,34 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@100..900&display=swap');
 
 
+=======
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@100..900&display=swap');
+
+/* IMPORT NAVIGATION STYLES */
+@import '/elements/navbar/navbar.css';
+@import '/elements/footer/footer.css';
+
+/* IMPORT ELEMENT STYLES */
+@import '/elements/lesson-styles/back-arrow.css';
+@import '/elements/lesson-styles/background.css';
+@import '/elements/lesson-styles/breadcrumb.css';
+@import '/elements/lesson-styles/content-table.css';
+@import '/elements/lesson-styles/hero.css';
+@import '/elements/lesson-styles/image-section.css';
+@import '/elements/lesson-styles/lists.css';
+@import '/elements/lesson-styles/main-image.css';
+@import '/elements/lesson-styles/related-links.css';
+@import '/elements/lesson-styles/scrollbar.css';
+@import '/elements/lesson-styles/texts.css';
+
+/* ROOT VARIABLES */
+>>>>>>> b60b7ea9a9b638cc7671071ca46424f18cce8e86
 :root {
   --color-white: #ffffff;
   --color-grey: grey;
@@ -10,9 +36,15 @@
   --color-darker-grey: #212529;
   --color-light-grey: #dcdddf;
   --color-background: #fcfcfc;
+<<<<<<< HEAD
   --color-primary: #fe011b;
   --color-primary-light: #fe808d;
   --color-primary-dark: #8d1622;
+=======
+  --color-primary: #ff9900;
+  --color-primary-light: #ffcc80;
+  --color-primary-dark: #995c00;
+>>>>>>> b60b7ea9a9b638cc7671071ca46424f18cce8e86
 
   --_mesh-gradient-blur: 100px;
   --_mesh-gradient-blend-mode: screen;
@@ -28,6 +60,7 @@ html {
   scroll-behavior: smooth;
 }
 
+<<<<<<< HEAD
 /* SCROLLBAR STYLING */
 
 ::-webkit-scrollbar {
@@ -123,11 +156,16 @@ body {
   .navbar {
     background-color: #212529;
   }
+=======
+body {
+  font-family: 'Abhaya Libre', sans-serif;
+>>>>>>> b60b7ea9a9b638cc7671071ca46424f18cce8e86
 }
 
 
 /* HEADER */
 
+<<<<<<< HEAD
 .back-arrow {
   position: absolute;
   top: 95px;
@@ -231,6 +269,14 @@ body {
 
 
 /* LESSON CONTENT*/
+=======
+.lesson-hero {
+  background-image: url(header.jpg);
+  background-position: center center;
+}
+
+/* MAIN CONTENT*/
+>>>>>>> b60b7ea9a9b638cc7671071ca46424f18cce8e86
 
 .main-content {
   width: 75%;
@@ -238,6 +284,7 @@ body {
   font-size: 1.15rem;
 }
 
+<<<<<<< HEAD
 .lesson-content {
   line-height: 1.6;
 
@@ -280,6 +327,12 @@ body {
   .lesson-ul, .lesson-ol {
     font-size: 14px;
   }
+=======
+@media (max-width: 600px) {
+  .main-content {
+    font-size: 1rem;
+  }
+>>>>>>> b60b7ea9a9b638cc7671071ca46424f18cce8e86
 }
 
 @keyframes floatUp {
@@ -294,6 +347,7 @@ body {
 }
 
 
+<<<<<<< HEAD
 /* TABLE OF CONTENTS */
 
 .accordion {
@@ -440,4 +494,51 @@ body {
   justify-content: center;
   gap: 5px;
   margin: 0;
+=======
+
+
+.model-3d-wrapper {
+  margin: 2rem 0;
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(27, 27, 27, 0.05);
+}
+
+.model-3d-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+
+.model-3d-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.model-3d-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .model-3d-wrapper {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  .model-3d-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+>>>>>>> b60b7ea9a9b638cc7671071ca46424f18cce8e86
 }

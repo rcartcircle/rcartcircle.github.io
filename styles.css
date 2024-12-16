@@ -8,6 +8,7 @@
 @import url('/elements/footer/footer.css');
 @import url('/elements/scrollbar/scrollbar.css');
 
+/* ROOT VARIABLES */
 :root {
     --text-color: #fffdff;
     --text-color-dark: #e7e7e7;

@@ -9,13 +9,13 @@
   
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+  
   <!-- Google Material Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-  
+  <link rel="stylesheet" href="404.css">
+
 </head>
 <body>
 
@@ -32,44 +32,33 @@
     </button>
     <div class="nav-links">
         <a href="/index.html">Home</a>
-        <a href="/sub-art-syllabus/select-grade.html" aria-current="page">Art Syllabus</a>
+        <a href="/sub-art-syllabus/select-grade.html">Art Syllabus</a>
 
         <a href="/index.html" class="logo" id="center-logo">
             <img src="/assets/logo.png" alt="logo" />
         </a>
 
         <a href="/sub-learning-portal/learning-portal.html">Learning Portal</a>
-        <a href="/index.html#art-papers-bot-card">Papers Bot</a>
+        <a href="/index.html#art-papers-bot-card">Art Papers Bot</a>
     </div>
   </nav>
 
   <script src="/elements/navbar/navbar.js"></script>
 
-
-  <!-- Page Title -->
-  <header class="select-grade-header mx-5">
-    <h4>Grade 09</h4>
-    <h1>Select Your Lesson</h1>
-  </header>
-
-  <!-- LESSON CARDS -->
-  <main class="lesson-cards">
-    <div class="container">
-      <div class="row mx-0 mx-md-2 my-4 my-md-5 gy-4 gy-md-5 gx-4 gx-md-5 justify-content-center">
-        <div class="col-12 col-md-6">
-          <a href="#" class="card">
-            <div class="card-body">
-              <h6 class="card-subtitle">01 පාඩම</h6>
-              <h5 class="card-title">We'll add lesssons as soon as possible.</h5>
-            </div>
-            <div class="card-drop px-0 px-md-3" id="vesak-lantern">
-              <img src="assets/lesson-icon.png" alt="vesak_lantern" />
-            </div>
-          </a>
-        </div>
+  <!-- Error Page -->
+  <div class="container-fluid">
+    <div class="error-template">
+      <h1>Work In Progress</h1>
+      <div class="error-details">
+        <p>We're updating this page. Thanks for your patience!</p>
+      </div>
+      <div class="error-actions">
+        <a href="/" class="btn-lg error-btn"><span class="material-symbols-outlined">home</span>Take Me Home</a>
       </div>
     </div>
-  </main>
+  </div>
+
+  <div class="error-bg"></div>
 
   <!-- FOOTER -->
 
@@ -155,23 +144,20 @@
         </div>
     </div>
     <div class="footer-bottom">
-      <hr class="footer-hr">
-      <p>©<span id="currentYear"></span> Chithra Akura | Royal College Art Circle</p>
+        <hr class="footer-hr">
+        <p>©2024 Chithra Akura | Royal College Art Circle</p>
     </div>
-    <script>
-      let date = new Date().getFullYear();
-      document.getElementById("currentYear").textContent = date;
-    </script>
   </footer>
 
-
-
-
+  <!-- Custom JS -->
+  <script src="404.js"></script>
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 
-  <!-- Custom JS -->
-  <script src="script.js"></script>
+  
 </body>
 </html>

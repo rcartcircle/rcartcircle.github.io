@@ -31,8 +31,8 @@
         <span></span>
     </button>
     <div class="nav-links">
-        <a href="/index.html" aria-current="page">Home</a>
-        <a href="/sub-art-syllabus/select-grade.html">Art Syllabus</a>
+        <a href="/index.html">Home</a>
+        <a href="/sub-art-syllabus/select-grade.html" aria-current="page">Art Syllabus</a>
 
         <a href="/index.html" class="logo" id="center-logo">
             <img src="/assets/logo.png" alt="logo" />
@@ -46,12 +46,13 @@
   <script src="/elements/navbar/navbar.js"></script>
 
 
-  <header class="select-grade-header mx-3">
+  <!-- Page Title -->
+  <header class="select-grade-header mx-5">
     <h4>Grade 10</h4>
     <h1>Select Your Lesson</h1>
   </header>
 
- <!-- LESSON CARDS -->
+  <!-- LESSON CARDS -->
   <main class="lesson-cards">
     <div class="container">
       <div class="row mx-0 mx-md-2 my-4 my-md-5 gy-4 gy-md-5 gx-4 gx-md-5 justify-content-center">
@@ -62,7 +63,7 @@
               <h5 class="card-title">එම්. සාර්ලිස් ශිල්පියාගේ සිතුවම් අගයමු</h5>
             </div>
             <div class="card-drop px-0 px-md-3" id="vesak-lantern">
-              <img src="assets/vesak-lantern-icon.png" alt="vesak_lantern" />
+              <img src="assets/lesson-icon.png" alt="vesak_lantern" />
             </div>
           </a>
         </div>
@@ -73,7 +74,7 @@
               <h5 class="card-title">සෝලියස් මෙන්ඩිස් ශිල්පියාගේ සිතුවම් අගයමු</h5>
             </div>
             <div class="card-drop px-0 px-md-3" id="vesak-lantern">
-              <img src="assets/vesak-lantern-icon.png" alt="vesak_lantern" />
+              <img src="assets/lesson-icon.png" alt="vesak_lantern" />
             </div>
           </a>
         </div>
@@ -384,10 +385,15 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <hr class="footer-hr">
-        <p>©2024 Chithra Akura | Royal College Art Circle</p>
+      <hr class="footer-hr">
+      <p>©<span id="currentYear"></span> Chithra Akura | Royal College Art Circle</p>
     </div>
+    <script>
+      let date = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = date;
+    </script>
   </footer>
+
 
 
 
